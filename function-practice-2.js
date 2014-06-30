@@ -55,3 +55,21 @@ var printObject = function(insertedObject) {
 		console.log(key + " is " + insertedObject[key]);
 	}
 }
+
+//7 
+var vowels = function (newString) {
+	var workingList = newString.split('');
+	var vowelsList = ['a', 'e', 'i', 'o', 'u'];
+	var vowelsInString = [];
+	for(i=0; i<workingList.length; i++) {
+		for(j=0; j<vowelsList.length; j++) {
+			if(workingList[i] === vowelsList[j]) {
+				console.log(workingList[i]);
+				console.log(vowelsList[j]);
+				vowelsInString.push(vowelsList[j]);
+			}
+		}
+	}
+	return vowelsInString;
+}
+
