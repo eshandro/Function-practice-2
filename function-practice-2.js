@@ -64,8 +64,6 @@ var vowels = function (newString) {
 	for(i=0; i<workingList.length; i++) {
 		for(j=0; j<vowelsList.length; j++) {
 			if(workingList[i] === vowelsList[j]) {
-				console.log(workingList[i]);
-				console.log(vowelsList[j]);
 				vowelsInString.push(vowelsList[j]);
 			}
 		}
@@ -73,3 +71,25 @@ var vowels = function (newString) {
 	return vowelsInString;
 }
 
+// 8 
+var twins = function (newArray) {
+	if (newArray.length % 2 !== 0) {
+		return false;
+	}
+	for(i=0; i<newArray.length; i+=2) {
+		if (newArray[i] !== newArray[i+1]) {
+			return false;
+		}
+	}
+	return true;
+}
+
+// 9
+var or = function(listBooleans) {
+	for(i=0; i<listBooleans.length; i++) {
+		if (listBooleans[i]) {
+			return true;
+		}
+	}
+	return false;
+}
