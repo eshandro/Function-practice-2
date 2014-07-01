@@ -92,4 +92,13 @@ var or = function(listBooleans) {
 		}
 	}
 	return false;
+
+//10
+var unique = function(enteredStrings) {
+	var newArray = [enteredStrings[0]]
+	for(i=1; i<enteredStrings.length; i++) {
+		for(j=i+1; j<enteredStrings.length; j++) {
+			if(enteredStrings[i] !== enteredStrings[j])
+		}
+	}
 }
